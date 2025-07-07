@@ -14,8 +14,9 @@ NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring an
 ## TRL-8 Goals (PLACEHOLDER!!!)
 
 NEUROPATCH aims to achieve TRL‑8 (Technology Readiness Level 8), signifying that the prototype is tested, validated, and ready for deployment in real-world environments.
-
+---
 ### Requirements freeze / CTQ table completed
+---
 ### Bench accuracy & linearity tested (± specified % FS)
 ### 12–24 h continuous data log captured with timestamps
 ### Temperature drift evaluated over available range
