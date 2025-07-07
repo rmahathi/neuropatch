@@ -2,7 +2,7 @@
 
 ## Summary
 
-**NEUROPATCH** is a wearable physiological monitoring patch designed by Team VitalCore (NMIT) for the ELCIA Sensor Hackathon 2025. It enables real-time assessment of **cognitive load**, **attention**, and **stress**, particularly for individuals with ADHD.
+**NEUROPATCH** is a wearable physiological monitoring patch to enable real-time assessment of **cognitive load**, **attention**, and **stress**, particularly for individuals with ADHD.
 
 The device leverages two key biosensors: the **MAX30102 PPG sensor** for heart rate and heart rate variability (HRV), and a **GSR sensor** for electrodermal activity. These signals reflect autonomic nervous system activity and help quantify mental states such as focus, arousal, and fatigue.
 
