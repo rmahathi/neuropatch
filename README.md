@@ -6,10 +6,10 @@
 NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring and accessible, portable solutions for schools, mental health screenings, and personal neurofeedback.
 
 ## Sensors Used
-| Sensor         | Type          | Purpose                       | Interface | Power | Pins                 |
-|----------------|---------------|-------------------------------|-----------|-------|----------------------|
-| MAX30102       | Optical (PPG) | HR, HRV, SpO₂                 | I²C       | 3.3V  | SDA → GP0, SCL → GP1 |
-| GSR Sensor v2  | Analog (EDA)  | Stress / attention monitoring | Analog    | 3.3V  | OUT → GP26 (ADC0)    |
+| Sensor             | Type          | Purpose                       | Interface | Power | Pins                 |
+|--------------------|---------------|-------------------------------|-----------|-------|----------------------|
+| **MAX30102**       | Optical (PPG) | HR, HRV, SpO₂ monitoring      | I²C       | 3.3V  | SDA → GP0, SCL → GP1 |
+| **GSR Sensor v2**  | Analog (EDA)  | Stress / attention monitoring | Analog    | 3.3V  | OUT → GP26 (ADC0)    |
 
 
 
