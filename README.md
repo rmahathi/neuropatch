@@ -12,8 +12,9 @@ NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring an
 | **GSR Sensor v2**  | Analog (EDA)  | Stress / attention monitoring | Analog    | 3.3V  | OUT → GP26 (ADC0)    |
 
 ## TRL-8 Goals
-The NEUROPATCH system aims to achieve TRL‑8 (Technology Readiness Level 8), signifying that the prototype is tested, validated, and ready for deployment in real-world environments.
----
+
+NEUROPATCH aims to achieve TRL‑8 (Technology Readiness Level 8), signifying that the prototype is tested, validated, and ready for deployment in real-world environments.
+
 | No. | Goal                                | Description |
 |-----|-------------------------------------|-------------|
 | 1️⃣  | Requirements Freeze & CTQ Table     | Define Critical-to-Quality metrics such as accuracy, drift, and sensor range. |
@@ -26,7 +27,7 @@ The NEUROPATCH system aims to achieve TRL‑8 (Technology Readiness Level 8), si
 | 8️⃣  | System Uptime ≥ 98%                 | Maintain system availability and logging without unexpected crashes or resets. |
 | 9️⃣  | Full Documentation Submission       | Include code, BOM, circuit diagrams, sensor logs, analysis, and risk assessment. |
 | 🔁  | Sensor-Swap Readiness                | Demonstrate fallback Indian substitutes for sensors (e.g., LM358 GSR, ProtoCentral PPG). |
----
+
 
 ## Setup Steps
 
