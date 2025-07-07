@@ -11,7 +11,7 @@ NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring an
 | **MAX30102**       | Optical (PPG) | HR, HRV, SpO₂ monitoring      | I²C       | 3.3V  | SDA → GP0, SCL → GP1 |
 | **GSR Sensor v2**  | Analog (EDA)  | Stress / attention monitoring | Analog    | 3.3V  | OUT → GP26 (ADC0)    |
 
-## TRL-8 Goals
+## TRL-8 Goals (PLACEHOLDER!!!)
 
 NEUROPATCH aims to achieve TRL‑8 (Technology Readiness Level 8), signifying that the prototype is tested, validated, and ready for deployment in real-world environments.
 
