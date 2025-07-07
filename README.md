@@ -10,23 +10,10 @@ The platform will first be validated on FPGA and later developed as an ASIC with
 Ultimately, Praan empowers India’s healthcare ecosystem with a customizable, certifiable, and cost-effective solution to expand life-saving monitoring across PHCs, hospitals, and home care environments.
 
 ## Sensors Used
-- MAX30102 – PPG (Photoplethysmography) Sensor
-Type: Optical pulse sensor
-Purpose: Measures heart rate, heart rate variability (HRV), and blood oxygen (SpO₂) using light absorption.
-Interface: I²C
-Power: 3.3V
-Pin Mapping: SDA → GP0, SCL → GP1
 
-- GSR Sensor Module v2 – Galvanic Skin Response Sensor
-Type: Analog electrodermal activity (EDA) sensor
-Purpose: Measures skin conductance/resistance, which correlates with cognitive load, stress, or attention.
-Interface: Analog voltage output
-Power: 3.3V
-Pin Mapping: OUT → GP26 (ADC0)
+| **Sensor/Module**             | **Type**                          | **Purpose**                                                                  | **Interface**        | **Power** | **Pin Mapping**                |
+|-------------------------------|-----------------------------------|------------------------------------------------------------------------------|----------------------|-----------|--------------------------------|
+| **MAX30102 – PPG Sensor**     | Optical pulse sensor              | Measures heart rate, HRV, and SpO₂ using light absorption                    | I²C                  | 3.3V      | SDA → GP0, SCL → GP1           |
+| **GSR Sensor Module v2**      | Analog electrodermal activity     | Measures skin conductance (EDA) for stress, attention, or cognitive load     | Analog (voltage out) | 3.3V      | OUT → GP26 (ADC0)              |
+| **SSD1306 OLED Display**      | I²C graphical display             | Visualizes HR, HRV, GSR, and cognitive state in real time                    | I²C (shared)         | 3.3V      | SDA → GP0, SCL → GP1 (shared)  |
 
-- Sensor Display:
-SSD1306 OLED Display (128x64)
-Type: I²C graphical display
-Purpose: Used to visualize HR, HRV, GSR, and cognitive state in real time
-Interface: I²C (shared with MAX30102)
-Pin Mapping: SDA → GP0, SCL → GP1
