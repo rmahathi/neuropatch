@@ -11,8 +11,8 @@ Ultimately, Praan empowers India’s healthcare ecosystem with a customizable, c
 
 ## Sensors Used
 
-| **Sensor**                    | **Type**                          | **Purpose**                                                                  | **Interface**        | **Power** | **Pin Mapping**                |
-|-------------------------------|-----------------------------------|------------------------------------------------------------------------------|----------------------|-----------|--------------------------------|
-| **MAX30102 – PPG Sensor**     | Optical pulse sensor              | Measures heart rate, HRV, and SpO₂ using light absorption                    | I²C                  | 3.3V      | SDA → GP0, SCL → GP1           |
-| **GSR Sensor Module v2**      | Analog electrodermal activity     | Measures skin conductance (EDA) for stress, attention, or cognitive load     | Analog (voltage out) | 3.3V      | OUT → GP26 (ADC0)              |
+| **Sensor**                    | **Type**                          | **Purpose**                                                             | **Interface**            | **Power** | **Pin Mapping**          |
+|-------------------------------|-----------------------------------|-------------------------------------------------------------------------|--------------------------|-----------|--------------------------|
+| **MAX30102 – PPG Sensor**     | Optical pulse sensor              | Measures heart rate, HRV, and SpO₂ using light absorption               | I²C                      | 3.3V      | SDA → GP0, SCL → GP1     |
+| **GSR Sensor Module v2**      | Analog electrodermal activity     | Measures skin conductivity for stress, attention, or cognitive load     | Analog (voltage out)     | 3.3V      | OUT → GP26 (ADC0)        |
 
