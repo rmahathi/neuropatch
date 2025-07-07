@@ -7,7 +7,6 @@ NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring an
 
 ## Sensors Used
 | Sensor     | MAX30102             | GSR Sensor v2                 |
-|------------|----------------------|-------------------------------|
 | Type       | Optical (PPG)        | Analog (EDA)                  |
 | Purpose    | HR, HRV, SpO₂        | Stress / attention monitoring |
 | Interface  | I²C                  | Analog                        |
