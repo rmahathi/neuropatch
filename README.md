@@ -10,9 +10,8 @@ The platform will first be validated on FPGA and later developed as an ASIC with
 Ultimately, Praan empowers India’s healthcare ecosystem with a customizable, certifiable, and cost-effective solution to expand life-saving monitoring across PHCs, hospitals, and home care environments.
 
 ## Sensors Used
-MAX30102 – PPG (Photoplethysmography) Sensor
-
-- Type: Optical pulse sensor
+- MAX30102 – PPG (Photoplethysmography) Sensor
+Type: Optical pulse sensor
 Purpose: Measures heart rate, heart rate variability (HRV), and blood oxygen (SpO₂) using light absorption.
 Interface: I²C
 Power: 3.3V
