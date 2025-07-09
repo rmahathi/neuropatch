@@ -1,17 +1,47 @@
 # Neuropatch - A Physiological Signal-Based Patch for Cognitive Load and Attention Assessment in ADHD
 
 ## Summary
-**NEUROPATCH** is a wearable physiological monitoring patch designed by Team VitalCore (Aishwarya Joshi and Mahathi R.) for the ELCIA Sensor Hackathon 2025. It enables real-time assessment of **cognitive load**, **attention**, and **stress**, particularly for individuals with ADHD. The device leverages two key biosensors: the **MAX30102 PPG sensor** for heart rate and heart rate variability (HRV), and a **GSR sensor** for electrodermal activity. These signals reflect autonomic nervous system activity and help quantify mental states such as focus, arousal, and fatigue. Built on the **Raspberry Pi Pico W**, the patch supports BLE communication, onboard signal processing, and data logging. The system emphasizes low cost, modularity, and TRL-8 readiness through rigorous sensor testing and characterization. 
+NEUROPATCH is a compact, wearable physiological monitoring device developed by Team VitalCore (Aishwarya Joshi and Mahathi R.) as part of the ELCIA TRL-8 Sensor Hackathon 2025. It is designed for real-time, non-invasive assessment of cognitive load, attention state, and stress reactivity—particularly in use cases involving neurodivergent populations (e.g., ADHD), as well as in high-focus environments such as classrooms, driver fatigue monitoring, and productivity tracking.
 
-NEUROPATCH aims to bridge the gap between clinical-grade cognitive monitoring and accessible, portable solutions for schools, mental health screenings, and personal neurofeedback.
+### 1. Integrated Biosensing Modalities
+The NEUROPATCH device combines two primary biosensors to extract features reflecting autonomic nervous system activity:
 
-## Sensors Used
 | Sensor             | Type          | Purpose                       | Interface | Power | Pins                 |
 |--------------------|---------------|-------------------------------|-----------|-------|----------------------|
 | **MAX30102**       | Optical (PPG) | HR, HRV, SpO₂ monitoring      | I²C       | 3.3V  | SDA → GP0, SCL → GP1 |
 | **GSR Sensor v2**  | Analog (EDA)  | Stress / attention monitoring | Analog    | 3.3V  | OUT → GP26 (ADC0)    |
 
-## 🛠 Setup Steps: Getting Started with NeuroPatch
+### MAX30102 PPG Sensor
+A reflective photoplethysmographic (PPG) sensor used to capture volumetric changes in blood flow at the skin surface. From this signal, the device estimates:
+   * Heart Rate (HR)
+   * Heart Rate Variability (HRV)
+These features serve as indicators of parasympathetic tone, which correlates with attentional engagement and cognitive effort.
+
+### GSR (Galvanic Skin Response) Sensor
+A skin conductance sensor that measures electrodermal activity via electrodes placed on fingers or palm. GSR tracks sympathetic nervous system arousal, which spikes during stress, anxiety, or high mental workload.
+
+### 2. System Architecture
+
+The sensors interface with a Raspberry Pi Pico W microcontroller that performs the following tasks:
+
+* Acquires real-time biosignals (analog + I²C)
+* Performs threshold-based logic to detect attention lapses
+* Drives a status LED alert (via GP15)
+* Displays HR and GSR values on a 128×64 I²C OLED screen
+* Optionally transmits raw data via USB serial for further analysis
+
+### 3. Motivation & Technical Differentiator
+
+NEUROPATCH offers a low-cost, research-oriented alternative to commercial fitness bands. It is designed for modular experimentation and signal-level access, making it suitable for:
+
+* Cognitive attention and stress tracking
+* ADHD screening studies
+* Embedded health analytics and edge-AI inference
+* Academic research on autonomic physiology
+
+Signal fusion of HRV (vagal tone) and EDA (sympathetic arousal) enables a richer interpretation of cognitive state compared to unimodal systems.
+
+## Setup Steps: Getting Started with NeuroPatch
 
 Follow these steps to set up your development environment for the *NeuroPatch* project on the Raspberry Pi Pico W using *MicroPython* and *Thonny IDE*.
 
@@ -78,7 +108,7 @@ To upload:
   - Compute SpO₂ and Heart Rate
   - Log everything to a .csv file on the device
 
-## TRL-8 Goals (PLACEHOLDER!!!)
+## TRL-8 Goals
 NEUROPATCH is designed to meet TRL‑8 readiness, demonstrating reliability, stability, and real-world deployability. The following characterization steps are planned:
 
 1. **Requirements Freeze & CTQ Table**
