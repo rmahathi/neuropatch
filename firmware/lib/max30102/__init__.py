@@ -40,3 +40,4 @@ class MAX30102:
 
     def read_reg(self, reg, num_bytes=1):
         return self.i2c.readfrom_mem(self.address, reg, num_bytes)
+
