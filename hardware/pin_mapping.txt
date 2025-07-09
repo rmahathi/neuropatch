@@ -1,20 +1,14 @@
 Raspberry Pi Pico W – Pin Mapping Table (NEUROPATCH System)
 
-Peripheral        | Signal / Function      | Pico W GPIO  | Pico Pin No.   | Notes
-------------------|------------------------|--------------|----------------|--------------------------------------------
-MAX30102          | SDA (I2C)              | GP0          | Pin 1          | Shared I2C bus (I2C0)
-                  | SCL (I2C)              | GP1          | Pin 2          | Shared I2C bus (I2C0)
-                  | VCC                    | —            | Pin 36 (3.3V)  | Sensor power supply
-                  | GND                    | —            | Pin 38 (GND)   | Ground
-
-GSR Sensor        | Analog OUT             | GP26 (ADC0)  | Pin 31         | Skin conductance as analog voltage
-                  | VCC                    | —            | Pin 36 (3.3V)  | Sensor power supply
-                  | GND                    | —            | Pin 38 (GND)   | Ground
-
-OLED Display      | SDA (I2C)              | GP0          | Pin 2          | Shared with MAX30102 (I2C0 bus)
-                  | SCL (I2C)              | GP1          | Pin 3          | Shared with MAX30102 (I2C0 bus)
-                  | VCC                    | —            | Pin 36 (3.3V)  | Display power
-                  | GND                    | —            | Pin 38 (GND)   | Ground
-
-Status LED        | Anode (via 220Ω)       | GP15         | Pin 20         | Focus/attention alert
-                  | Cathode                | —            | GND (any)      | Ground
+| Peripheral     | Signal / Function      | Pico W GPIO | Pico Pin No.  | Notes                                                                 |
+| -------------- | ---------------------- | ----------- | ------------- | --------------------------------------------------------------------- |
+| **MAX30102**   | SDA (I2C)              | GP0         | Pin 1         | Shared I2C bus (I2C0), **4.7kΩ pull-up to 3.3V**                      |
+|                | SCL (I2C)              | GP1         | Pin 2         | Shared I2C bus (I2C0), **4.7kΩ pull-up to 3.3V**                      |
+|                | VCC                    | —           | Pin 36 (3.3V) | Sensor power supply                                                   |
+|                | GND                    | —           | Pin 38 (GND)  | Ground                                                                |
+| **GSR Sensor** | Analog OUT             | GP26 (ADC0) | Pin 31        | Skin conductance as analog voltage                                    |
+|                | VCC                    | —           | Pin 36 (3.3V) | Sensor power supply                                                   |
+|                | GND                    | —           | Pin 38 (GND)  | Ground                                                                |
+|                | **Analog OUT Pull-up** | —           | —             | **4.7kΩ resistor from GP26 (analog out) to 3.3V** (optional for bias) |
+| **Status LED** | Anode (via 220Ω)       | GP15        | Pin 20        | Focus/attention alert                                                 |
+|                | Cathode                | —           | GND (any)     | Ground                                                                |
