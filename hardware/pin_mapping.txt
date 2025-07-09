@@ -2,8 +2,8 @@ Raspberry Pi Pico W – Pin Mapping Table (NEUROPATCH System)
 
 Peripheral        | Signal / Function      | Pico W GPIO  | Pico Pin No.   | Notes
 ------------------|------------------------|--------------|----------------|--------------------------------------------
-MAX30102          | SDA (I2C)              | GP0          | Pin 2          | Shared I2C bus (I2C0)
-                  | SCL (I2C)              | GP1          | Pin 3          | Shared I2C bus (I2C0)
+MAX30102          | SDA (I2C)              | GP0          | Pin 1          | Shared I2C bus (I2C0)
+                  | SCL (I2C)              | GP1          | Pin 2          | Shared I2C bus (I2C0)
                   | VCC                    | —            | Pin 36 (3.3V)  | Sensor power supply
                   | GND                    | —            | Pin 38 (GND)   | Ground
 
